@@ -1,0 +1,14 @@
+org: joncorrin
+app: property-data-bot
+service: openhouse-property-search
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.10
+
+functions:
+  hello:
+    handler: handler.hello
+plugins:
+  - serverless-python-requirements
